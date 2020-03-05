@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f04cc38-25a2-44a8-a463-d66cf23e488e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/database/factories/ProductItemFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/ProductCategoriesTableSeeder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +157,7 @@
       <option name="presentableId" value="Default" />
       <updated>1583354196759</updated>
       <workItem from="1583354199856" duration="3025000" />
-      <workItem from="1583388619866" duration="3237000" />
+      <workItem from="1583388619866" duration="3858000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1583354987921</created>
@@ -171,26 +173,45 @@
       <option name="project" value="LOCAL" />
       <updated>1583391146416</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Create seeder &amp; factory">
+      <created>1583392555768</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1583392555768</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create project" />
     <MESSAGE value="create model and migration" />
-    <option name="LAST_COMMIT_MESSAGE" value="create model and migration" />
+    <MESSAGE value="Create seeder &amp; factory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create seeder &amp; factory" />
   </component>
   <component name="WindowStateProjectService">
     <state x="803" y="27" width="476" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583392232764">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="803" y="27" width="476" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1583392232764" />
-    <state x="93" y="62" width="869" height="989" key="CommitChangelistDialog2" timestamp="1583391146213">
+    <state x="93" y="62" width="869" height="989" key="CommitChangelistDialog2" timestamp="1583392555672">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="93" y="62" width="869" height="989" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1583391146213" />
+    <state x="93" y="62" width="869" height="989" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1583392555672" />
     <state x="74" y="324" width="906" height="466" key="EditFileWatcherDialog" timestamp="1583354958119">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
