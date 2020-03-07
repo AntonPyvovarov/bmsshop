@@ -17,10 +17,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::group(['namespace'=>'Shop' , 'prefix'=>'shop'], function() {
+    Route::resource('products','ProductController')->names('shop.products');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
