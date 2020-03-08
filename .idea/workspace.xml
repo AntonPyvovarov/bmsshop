@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f04cc38-25a2-44a8-a463-d66cf23e488e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Shop/ProductController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/font-awesome/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/font-awesome/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/font-awesome/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/font-awesome/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/font-awesome/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/shop/product/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/route.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/shop/product/product.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Shop/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Shop/ProductController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +16,13 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="blade" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -184,7 +177,7 @@
       <workItem from="1583475136264" duration="1140000" />
       <workItem from="1583522537237" duration="8112000" />
       <workItem from="1583622393411" duration="121000" />
-      <workItem from="1583622530559" duration="1157000" />
+      <workItem from="1583622530559" duration="3060000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1583354987921</created>
@@ -214,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583393035385</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="all products">
+      <created>1583625126825</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1583625126826</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,21 +238,26 @@
     <MESSAGE value="create project" />
     <MESSAGE value="create model and migration" />
     <MESSAGE value="Create seeder &amp; factory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create seeder &amp; factory" />
+    <MESSAGE value="all products" />
+    <option name="LAST_COMMIT_MESSAGE" value="all products" />
   </component>
   <component name="WindowStateProjectService">
     <state x="590" y="215" width="800" height="736" key="#Intentions" timestamp="1583476131740">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="590" y="215" width="800" height="736" key="#Intentions/70.27.1850.1053@70.27.1850.1053" timestamp="1583476131740" />
+    <state x="606" y="323" width="768" height="467" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1583625491938">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="606" y="323" width="768" height="467" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1583625491938" />
     <state x="803" y="27" width="476" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583392232764">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="803" y="27" width="476" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1583392232764" />
-    <state x="70" y="91" width="869" height="989" key="CommitChangelistDialog2" timestamp="1583624974666">
+    <state x="70" y="91" width="869" height="989" key="CommitChangelistDialog2" timestamp="1583626854115">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="70" y="91" width="869" height="989" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1583624974666" />
+    <state x="70" y="91" width="869" height="989" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1583626854115" />
     <state x="74" y="324" width="906" height="466" key="EditFileWatcherDialog" timestamp="1583354958119">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
