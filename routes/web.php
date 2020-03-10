@@ -16,13 +16,22 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Auth::routes();
 
+Route::get('/home', 'HomeController@index')->name('home');
+
+//product controller
 Route::group(['namespace'=>'Shop' , 'prefix'=>'shop'], function() {
     Route::resource('products','ProductController')->names('shop.products');
 });
 
-Auth::routes();
+//admin controller
+Route::group(['namespace'=>'Shop\Admin\Product','prefix'=>'shop/admin'],function (){
+    Route::resource('products','ProductController')
+        ->except('show')
+        ->names('shop.admin.product');
+});
 
-Route::get('/home', 'HomeController@index')->name('home');
+
 
 

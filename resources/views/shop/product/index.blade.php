@@ -4,7 +4,7 @@
 
         @foreach($products as $product)
             <div class="card mr-2 " style="width: 18rem;">
-                <img src="{{Storage::url($product->title_image)}}" class="card-img-top" alt="...">
+                <img src="{{ Storage::url($product->title_image) }}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title text-danger">{{$product->title}}</h5>
                     <p class="card-text">{{$product->excerpt}}</p>
@@ -17,7 +17,7 @@
             </div>
         @endforeach
         <nav aria-label="Page navigation example">
-            <ul class="pagination justify-content-center">
+            <ul class="pagination justify-content-center py-3">
                 {{$products->links()}}
             </ul>
         </nav>

@@ -2,9 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f04cc38-25a2-44a8-a463-d66cf23e488e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/shop/product/product.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Shop/Admin/Product/ProductController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/IsAdmin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/ProductCreateRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/image.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/shop/admin/products/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webShop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webShop.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Shop/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Shop/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/ProductItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/ProductItem.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shop/product/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shop/product/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/route.txt" beforeDir="false" afterPath="$PROJECT_DIR$/route.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,6 +146,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/debug" />
       <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
     </include_path>
   </component>
   <component name="ProjectId" id="1YgB8RKdUgA4UhpkTiYt8b5rb4M" />
@@ -146,12 +163,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../shop" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.notifications" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/Shop" />
       <recent name="$PROJECT_DIR$/storage/app/public" />
       <recent name="$PROJECT_DIR$/resources/views/shop" />
     </key>
@@ -177,7 +195,10 @@
       <workItem from="1583475136264" duration="1140000" />
       <workItem from="1583522537237" duration="8112000" />
       <workItem from="1583622393411" duration="121000" />
-      <workItem from="1583622530559" duration="3060000" />
+      <workItem from="1583622530559" duration="3867000" />
+      <workItem from="1583741700621" duration="1938000" />
+      <workItem from="1583777298465" duration="11966000" />
+      <workItem from="1583820628859" duration="2272000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1583354987921</created>
@@ -214,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583625126826</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="create single product page">
+      <created>1583626980886</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1583626980886</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,7 +267,8 @@
     <MESSAGE value="create model and migration" />
     <MESSAGE value="Create seeder &amp; factory" />
     <MESSAGE value="all products" />
-    <option name="LAST_COMMIT_MESSAGE" value="all products" />
+    <MESSAGE value="create single product page" />
+    <option name="LAST_COMMIT_MESSAGE" value="create single product page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="590" y="215" width="800" height="736" key="#Intentions" timestamp="1583476131740">
@@ -250,22 +279,26 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="606" y="323" width="768" height="467" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1583625491938" />
-    <state x="803" y="27" width="476" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583392232764">
+    <state x="803" y="27" width="476" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583790811144">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="803" y="27" width="476" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1583392232764" />
-    <state x="70" y="91" width="869" height="989" key="CommitChangelistDialog2" timestamp="1583626854115">
+    <state x="803" y="27" width="476" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1583790811144" />
+    <state x="728" y="311" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1583790996721">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="70" y="91" width="869" height="989" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1583626854115" />
+    <state x="728" y="311" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1583790996721" />
+    <state x="70" y="91" width="869" height="989" key="CommitChangelistDialog2" timestamp="1583626980743">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="70" y="91" width="869" height="989" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1583626980743" />
     <state x="74" y="324" width="906" height="466" key="EditFileWatcherDialog" timestamp="1583354958119">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="74" y="324" width="906" height="466" key="EditFileWatcherDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1583354958119" />
-    <state x="530" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1583388639568">
+    <state x="530" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1583777311585">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="530" y="311" width="424" height="491" key="FileChooserDialogImpl/70.27.1850.1053@70.27.1850.1053" timestamp="1583388639568" />
+    <state x="530" y="311" width="424" height="491" key="FileChooserDialogImpl/70.27.1850.1053@70.27.1850.1053" timestamp="1583777311585" />
     <state x="578" y="290" width="824" height="533" key="IDE.errors.dialog" timestamp="1583531477259">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
@@ -274,9 +307,13 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="484" y="188" width="1022" height="737" key="SettingsEditor/70.27.1850.1053@70.27.1850.1053" timestamp="1583622512064" />
-    <state x="658" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1583476258050">
+    <state width="641" height="446" key="SwitcherDM" timestamp="1583783243600">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="658" y="259" width="672" height="678" key="search.everywhere.popup/70.27.1850.1053@70.27.1850.1053" timestamp="1583476258050" />
+    <state width="641" height="446" key="SwitcherDM/70.27.1850.1053@70.27.1850.1053" timestamp="1583783243600" />
+    <state x="658" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1583822745532">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="658" y="259" width="672" height="678" key="search.everywhere.popup/70.27.1850.1053@70.27.1850.1053" timestamp="1583822745532" />
   </component>
 </project>
