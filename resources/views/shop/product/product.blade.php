@@ -1,17 +1,17 @@
 @extends('layouts.app')
+@section('description', $product->description)
 @section('title', $product->title)
 
 @section('content')
-
-    <div class="col-md-8">
+    <div class="row justify-content-center  ">
+    <div class="col-md-9 ">
         <div class="py-3 ">
-            <h1 class="text-info">{{$product->title}}</h1>
+            <h1 class="card-title">{{$product->title}}</h1>
         </div>
-        <div class="py-3">
+        <div>
             <p class="">
-                ЦІНА :  <span class="text-danger">{{$product->price}}</span>грн
+                ЦІНА : <span class="text-danger">{{$product->price}}</span>грн
             </p>
-
         </div>
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
@@ -33,5 +33,6 @@
         <div class="content py-5">
             {!! $product->content_raw !!}
         </div>
+    </div>
     </div>
 @endsection

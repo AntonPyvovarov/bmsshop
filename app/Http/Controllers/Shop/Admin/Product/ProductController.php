@@ -80,7 +80,7 @@ class ProductController extends Controller
                         $fileName = $data['slug'] . "/" . $fileName . '.' . $extension;
                         // Save imageName
                         $paths[] = $imageName->storeAs('public', $fileName);
-                        $images = Image::make(public_path('storage/' . $fileName))->resize(1080, 607);
+                        $images = Image::make(public_path('storage/' . $fileName))->fit(1080, 607);
                         $images->save();
                         //convert array to string for saving in database
                         $strFileName = implode("|", $paths);
@@ -93,7 +93,7 @@ class ProductController extends Controller
             $item->save();
 
             if ($item) {
-                return redirect()->route('shop.products.index')
+                return redirect()->route('index')
                     ->with(['success' => 'saved']);
             } else {
                 return back()

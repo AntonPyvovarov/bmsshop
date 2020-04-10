@@ -13928,3 +13928,15 @@ a.text-dark:focus {
   clip: auto;
 }
 
+.card-title {
+  color: #3d3e3d;
+}
+
+.card-text {
+  color: #000;
+}
+
+.link {
+  color: #f97171;
+}
+

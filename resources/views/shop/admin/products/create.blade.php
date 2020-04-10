@@ -9,12 +9,28 @@
             @csrf
             <div class="form-group">
                 <label for="title">Заголовок</label>
-                <input type="text" class="form-control" id="title" name="title" placeholder="Заголовок"
+                <input type="text" class="form-control" value="{{old('title')}}" id="title" name="title"
+                       placeholder="Заголовок"
+                       minlength="3" required>
+            </div>
+            {{--Seo--}}
+            <div class="form-group">
+                <label for="description">Description</label>
+                <input type="text" class="form-control" value="{{old('description')}}" id="description"
+                       name="description" placeholder="description"
                        minlength="3" required>
             </div>
             <div class="form-group">
+                <label for="meta_key">Не більше 6-8 слів</label>
+                <input type="text" class="form-control" value="{{old('meta_key')}}" id="meta_key" name="meta_key"
+                       placeholder="meta_key"
+                       minlength="3" required>
+            </div>
+
+            <div class="form-group">
                 <label for="price">Ціна</label>
-                <input type="text" name="price" class="form-control" id="price" placeholder="Ціна">
+                <input type="text" name="price" class="form-control" value="{{old('price')}}" id="price"
+                       placeholder="Ціна">
             </div>
 
             <div class="form-group">
@@ -28,12 +44,13 @@
             <div class="form-group">
                 <label for="excerpt">Короткий опис</label>
                 <textarea class="form-control" name="excerpt" id="excerpt" rows="5">
-
+                    {{old('excerpt')}}
                         </textarea>
             </div>
             <div class="form-group">
                 <label for="content_raw">Контент</label>
                 <textarea class="form-control" name="content_raw" id="content_raw" rows="12">
+                    {{old('content_raw')}}
                         </textarea>
             </div>
             <div class="form-group">
@@ -42,7 +59,7 @@
             </div>
             <div class="form-group">
                 <label for="exampleFormControlFile1">Вставити картинки</label>
-                <input type="file" class="form-control-file" id="file" name="image[]" value="{{ old('file') }}"
+                <input type="file" class="form-control-file" id="file" name="image[]" value="{{ old('image') }}"
                        multiple>
             </div>
 

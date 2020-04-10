@@ -22,6 +22,10 @@ class CreateProductItemsTable extends Migration
             $table->string('slug')->unique()->nullable();
             $table->string('title');
             $table->string('price');
+            //seo
+            $table->string('description')->nullable();
+            $table->string('meta_key')->nullable();
+
 
             $table->text('excerpt')->nullable();
 

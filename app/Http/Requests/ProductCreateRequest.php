@@ -26,6 +26,8 @@ class ProductCreateRequest extends FormRequest
         return [
 
             'title' => 'required|min:5',
+            'description'=>'required|min:5',
+            'meta_key'=>'required|min:5',
             'slug' => 'max:200',
             'price' => 'numeric',
             'excerpt'=>'max:200',
