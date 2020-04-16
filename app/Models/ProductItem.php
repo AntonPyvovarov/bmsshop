@@ -5,9 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
+
 class ProductItem extends Model
 {
     use SoftDeletes;
+
+
+
     protected $fillable = [
         'title',
         'description',
@@ -22,6 +26,6 @@ class ProductItem extends Model
 
     public function category()
     {
-        return $this->belongsTo(ProductCategory::class, 'id');
+        return $this->belongsTo(ProductCategory::class);
     }
 }

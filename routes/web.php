@@ -23,10 +23,15 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::group(['namespace'=>'Shop' , 'prefix'=>'shop'], function() {
     Route::resource('products','ProductController')->names('shop.products');
 });
+Route::get('products/{id}','Shop\ProductController@show');
+Route::post('/search', [
+    'as' => 'search',
+    'uses' => 'Shop\ProductController@search'
+]);
 
 
-Route::get('products/sort/','Shop\SortController@index');
-Route::get('products/sort/{id}','Shop\SortController@sort')->name('sort');
+Route::get('products/cat','Shop\SortController@index');
+Route::get('products/sort/{id}','Shop\ProductController@sortByCategory')->name('sort');
 
 
 
