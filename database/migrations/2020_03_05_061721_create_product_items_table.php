@@ -17,21 +17,21 @@ class CreateProductItemsTable extends Migration
             $table->bigIncrements('id');
 
             $table->unsignedBigInteger('category_id');
-            $table->unsignedBigInteger('user_id')->nullable();
+//
 
-            $table->string('slug')->unique()->nullable();
+            $table->string('slug')->unique();
             $table->string('title');
             $table->string('price');
             //seo
-            $table->string('description')->nullable();
-            $table->string('meta_key')->nullable();
+            $table->string('description');
+            $table->string('meta_key');
 
 
-            $table->text('excerpt')->nullable();
+            $table->text('excerpt');
 
             $table->text('content_raw');
-            $table->string('title_image')->nullable();
-            $table->mediumText('image')->nullable();
+            $table->string('title_image');
+            $table->mediumText('image');
 
             $table->boolean('is_published')->default(false);
             $table->timestamp('published_at')->nullable();
@@ -39,7 +39,7 @@ class CreateProductItemsTable extends Migration
             $table->timestamps();
             $table->softDeletes();
 
-            $table->foreign('user_id')->references('id')->on('users');
+
             $table->foreign('category_id')->references('id')->on('product_categories');
             $table->index('is_published');
         });

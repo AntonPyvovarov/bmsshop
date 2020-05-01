@@ -24,6 +24,7 @@
 <body>
 <div id="app">
     @include('layouts.header')
+
     <div class="container-fluid py-3">
         <div class="row justify-content-center">
             @yield('navigation')
@@ -32,6 +33,7 @@
             </div>
         </div>
     </div>
+    @include('layouts.footer')
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

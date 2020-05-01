@@ -16,9 +16,10 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products = ProductItem::latest()->paginate(12);
+        $products = ProductItem::latest()
+            ->limit(6)->get();
         $categories = ProductCategory::all();
-        return view('shop.product.index', compact('products', 'categories'));
+        return view('welcome', compact('products', 'categories'));
     }
 
     /**
@@ -31,20 +32,20 @@ class ProductController extends Controller
     public function show($id)
     {
         $product = ProductItem::where('slug', $id)->first();
-        if (isset($product->image)){
-        $product->image = explode('|', $product->image);
-}
+        if (isset($product->image)) {
+            $product->image = explode('|', $product->image);
+        }
         return view('shop.product.product', compact('product'));
     }
 
 
     public function sortByCategory($id)
     {
-        // $products=DB::table('product_items')->where('category_id',$id)->paginate(12);
-        $products = Productitem::with(['category'])->orderBy('id','DESC')->where('category_id', $id)->paginate(12);
+        $products = Productitem::with(['category'])
+            ->orderBy('id', 'DESC')
+            ->where('category_id', $id)
+            ->paginate(12);
         //$products =ProductCategory::with('products')->find($id);
-
-
         $categories = ProductCategory::all();
         if (empty($products && $categories)) {
             return null;
@@ -61,16 +62,16 @@ class ProductController extends Controller
     {
 
         if ($request->input('search')) {
+            // $error = ['error' => 'No results found, please try with different keywords.'];
 
-
-       // $error = ['error' => 'No results found, please try with different keywords.'];
-
-        $products = ProductItem::orderBy('id','DESC')->where('title', 'like', "{$request->input('search')}%")->paginate(12);
+            $products = ProductItem::orderBy('id', 'DESC')
+                ->where('title', 'like', "{$request->input('search')}%")
+                ->paginate(12);
 //
 
-        $categories =ProductCategory::all();
-        // Если есть результат есть, вернем его, если нет  - вернем сообщение об ошибке.
-        return view('shop.product.search',compact('products','categories'));
+            $categories = ProductCategory::all();
+            // Если есть результат есть, вернем его, если нет  - вернем сообщение об ошибке.
+            return view('shop.product.search', compact('products', 'categories'));
         }
     }
 

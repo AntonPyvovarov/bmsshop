@@ -65,7 +65,7 @@ class ProductController extends Controller
                     $imagePath = $data['slug'] . "/" . $title_image . '.' . $extension;
                     // $img->save(storage_path($imagePath));
                     $image->storeAs('public', $imagePath);
-                    $image = Image::make(public_path('storage/' . $imagePath))->fit(300, 300);
+                    $image = Image::make(public_path('storage/' . $imagePath))->fit(1080, 607);
                     //save resize image
                     $image->save();
                     $item->title_image = $imagePath;
@@ -93,7 +93,7 @@ class ProductController extends Controller
             $item->save();
 
             if ($item) {
-                return redirect()->route('index')
+                return redirect()->route('main')
                     ->with(['success' => 'saved']);
             } else {
                 return back()

@@ -12,12 +12,7 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         $data = [
-            [
-                'name' => 'Anton',
-                'email' => 'Anton@gmail.com',
-                'password' => bcrypt('1111'),
-                'admin'=>'0'
-            ],
+
 
             [   'name' => 'Pyvovarov Anton',
                 'email'=> 'author@g.g',

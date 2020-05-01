@@ -30,17 +30,13 @@
 
 
     </div>
-    @if($products->total()>$products->count())
-        <div class="row justify-content-center">
-            <nav aria-label="Page navigation example">
-                <ul class="pagination justify-content-center py-4">
-                    {{$products->links()}}
-                </ul>
-            </nav>
-        </div>
-    @endif
-
-
-
-
+{{--    @if($products->total()>$products->count())--}}
+{{--        <div class="row justify-content-center">--}}
+{{--            <nav aria-label="Page navigation example">--}}
+{{--                <ul class="pagination justify-content-center py-4">--}}
+{{--                    {{$products->links()}}--}}
+{{--                </ul>--}}
+{{--            </nav>--}}
+{{--        </div>--}}
+{{--    @endif--}}
 @endsection

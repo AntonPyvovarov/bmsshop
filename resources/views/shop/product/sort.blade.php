@@ -28,7 +28,7 @@
                 </div>
             </div>
         @endforeach
-        
+
     </div>
 
         <div class="row justify-content-center">

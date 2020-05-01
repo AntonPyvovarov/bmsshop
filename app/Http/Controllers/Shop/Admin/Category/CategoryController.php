@@ -7,6 +7,7 @@ use App\Http\Requests\CategoryCreateRequest;
 use App\Models\ProductCategory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
+use Intervention\Image\Facades\Image;
 
 class CategoryController extends Controller
 {
@@ -42,28 +43,40 @@ class CategoryController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\RedirectResponse
      */
     public function store(CategoryCreateRequest $request)
     {
 
-        if($request->input()){
-            $data=$request->input();
+        if ($request->input()) {
+            $data = $request->input();
 
-            if (empty($data['slug'])){
-                $data['slug']=Str::slug($data['title']);
-                $category =new ProductCategory($data);
+            if (empty($data['slug'])) {
+                $data['slug'] = Str::slug($data['title']);
+                $category = new ProductCategory($data);
+
+                if ($request->hasFile('image')) {
+                    $image = $request->file('image');
+                    $extension = $image->getClientOriginalExtension();
+                    $imagePath = 'categories/' . $category->slug . '.' . $extension;
+                    $image->storeAs('public', $imagePath);
+                    $image = Image::make(public_path('storage/' . $imagePath))
+                        ->fit(250, 200);
+                    $image->save();
+                    $category->image =$imagePath;
+                }
+
                 $category->save();
             }
 
         }
-        if ($category){
-            return redirect()->route('shop.products.index')
-                ->with(['success'=>'saved']);
-        }else{
+        if ($category) {
+            return redirect()->route('main')
+                ->with(['success' => 'saved']);
+        } else {
             return back()
-                ->withErrors(['msg'=>'error'])
+                ->withErrors(['msg' => 'error'])
                 ->withInput();
         }
     }
@@ -71,7 +84,7 @@ class CategoryController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
@@ -82,7 +95,7 @@ class CategoryController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -93,8 +106,8 @@ class CategoryController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param \Illuminate\Http\Request $request
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
@@ -105,7 +118,7 @@ class CategoryController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)

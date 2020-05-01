@@ -8,8 +8,8 @@
     @if(!$products->count())
         <div class="row justify-content-center">
             <div class="col-md-9 justify-content-center">
-                <h2>Пошук результатів не дав!</h2>
-                <h3>Введіть по іншому!</h3>
+                <h2>Нет результатов!</h2>
+                <h3>Может как-то изменить запрос.</h3>
             </div>
         </div>
 
