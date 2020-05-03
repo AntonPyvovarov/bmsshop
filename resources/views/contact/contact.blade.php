@@ -7,13 +7,19 @@
             <form method="POST" enctype="multipart/form-data" role="form" action="/contact">
 
                 <div class="form-group">
-                    <label for="name">Ваше Имя</label>
+                    <label for="name">Ваше Имя:</label>
                     <input type="text" class="form-control" value="{{old('name')}}" id="name" name="name"
                            placeholder="Введите имя"
                            minlength="3" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">Почта</label>
+                    <label for="tel">Номер Телефона:</label>
+                    <input type="tel" class="form-control" value="{{old('tel')}}" id="tel" name="tel"
+                           placeholder="Введите номер телефона"
+                           minlength="10" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Почта:</label>
                     <input type="email" class="form-control" value="{{old('email')}}" id="email" name="email"
                            placeholder="Введите почту"
                            minlength="3" required>

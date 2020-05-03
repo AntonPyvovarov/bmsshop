@@ -67,7 +67,6 @@ class ProductController extends Controller
             $products = ProductItem::orderBy('id', 'DESC')
                 ->where('title', 'like', "{$request->input('search')}%")
                 ->paginate(12);
-//
 
             $categories = ProductCategory::all();
             // Если есть результат есть, вернем его, если нет  - вернем сообщение об ошибке.
