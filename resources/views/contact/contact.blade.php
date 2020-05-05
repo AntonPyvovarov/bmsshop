@@ -3,7 +3,7 @@
 @section('content')
     <div class="row justify-content-center">
         <div class="col-md-7">
-            <h2>Добавлення Позиції</h2>
+            <h2>Оставить сообщение</h2>
             <form method="POST" enctype="multipart/form-data" role="form" action="/contact">
 
                 <div class="form-group">

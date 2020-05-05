@@ -20,6 +20,12 @@ class UsersTableSeeder extends Seeder
                 'admin'=>'1'
 
             ],
+            [   'name' => 'Pyvovarov Anton',
+                'email'=> 'anton@g.g',
+                'password' => bcrypt('123'),
+                'admin'=>'0'
+
+            ],
 
         ];
         \DB::table('users')->insert($data);

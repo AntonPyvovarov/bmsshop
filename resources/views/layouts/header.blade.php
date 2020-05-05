@@ -27,32 +27,41 @@
             <ul class="navbar-nav ml-auto">
                 <!-- Authentication Links -->
                 <form class="form-inline my-2 my-lg-0" role="search" method="POST" action="{{route('search')}}">
-                   @csrf
+                    @csrf
                     <input class="form-control mr-sm-2" name="search" type="search" placeholder="Search"
                            aria-label="Search" minlength="3" required maxlength="200">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
                 @auth
                     <li class="nav-item dropdown">
-                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                             {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="{{ route('shop.admin.category.create') }}">
-                                Создать Категорию
-                            </a>
-                            <a class="dropdown-item" href="{{ route('shop.admin.product.create') }}">
-                                Создать Карточку Товара
-                            </a>
-                            <a class="dropdown-item" href="{{ route('logout') }}"
-                               onclick="event.preventDefault();
+
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                @if (!Auth::guest() && Auth::user()->admin)
+                                <a class="dropdown-item" href="{{ route('shop.admin.category.create') }}">
+                                    Создать Категорию
+                                </a>
+                                <a class="dropdown-item" href="{{ route('shop.admin.product.create') }}">
+                                    Создать Карточку Товара
+                                </a>
+                                @else
+                                    <a class="dropdown-item" href="{{ route('home') }}">
+                                        home
+                                    </a>
+                                @endif
+                                <a class="dropdown-item" href="{{ route('logout') }}"
+                                   onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                {{ __('Logout') }}
-                            </a>
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                @csrf
-                            </form>
-                        </div>
+                                    {{ __('Logout') }}
+                                </a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                      style="display: none;">
+                                    @csrf
+                                </form>
+                            </div>
                     </li>
                 @endauth
             </ul>

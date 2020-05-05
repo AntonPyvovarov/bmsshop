@@ -7,7 +7,7 @@
     </div>
     <hr>
     <div class="row justify-content-center" >
-    <h2>Наша миссия чтобы каждый покупатель остался довольный!</h2>
+    <h2>Магазин </h2>
 
     </div>
     <section>

@@ -3,14 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="5f04cc38-25a2-44a8-a463-d66cf23e488e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Shop/ContactController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Shop/ContactController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Shop/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Shop/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_01_211314_create_contacts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_01_211314_create_contacts_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/contact/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact/contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/emails/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/shop/admin/category/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shop/admin/category/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/static/aboutUs.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/static/aboutUs.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -277,7 +273,9 @@
       <workItem from="1588407196867" duration="3023000" />
       <workItem from="1588491236119" duration="597000" />
       <workItem from="1588504669372" duration="2621000" />
-      <workItem from="1588512961052" duration="7591000" />
+      <workItem from="1588512961052" duration="8433000" />
+      <workItem from="1588622971010" duration="1271000" />
+      <workItem from="1588630082496" duration="960000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1583354987921</created>
@@ -349,7 +347,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588367708435</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="alpha 2">
+      <created>1588523058695</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1588523058695</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,7 +383,8 @@
     <MESSAGE value="add sort by category &amp; navigation menu" />
     <MESSAGE value="add search, add seo url to products" />
     <MESSAGE value="create contact form &amp; add image to categories" />
-    <option name="LAST_COMMIT_MESSAGE" value="create contact form &amp; add image to categories" />
+    <MESSAGE value="alpha 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="alpha 2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="590" y="215" width="800" height="736" key="#Intentions" timestamp="1583476131740">
@@ -415,11 +421,11 @@
       <screen x="62" y="27" width="1858" height="1053" />
     </state>
     <state x="723" y="377" width="525" height="359" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/62.27.1858.1053@62.27.1858.1053" timestamp="1586179012841" />
-    <state x="64" y="37" width="912" height="1043" key="CommitChangelistDialog2" timestamp="1588367708052">
+    <state x="64" y="37" width="912" height="1043" key="CommitChangelistDialog2" timestamp="1588523058539">
       <screen x="64" y="27" width="1856" height="1053" />
     </state>
     <state x="62" y="37" width="912" height="1043" key="CommitChangelistDialog2/62.27.1858.1053@62.27.1858.1053" timestamp="1587048607452" />
-    <state x="64" y="37" key="CommitChangelistDialog2/64.27.1856.1053@64.27.1856.1053" timestamp="1588367708052" />
+    <state x="64" y="37" width="912" height="1043" key="CommitChangelistDialog2/64.27.1856.1053@64.27.1856.1053" timestamp="1588523058539" />
     <state x="70" y="91" width="869" height="989" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1583823049395" />
     <state x="74" y="324" width="906" height="466" key="EditFileWatcherDialog" timestamp="1583354958119">
       <screen x="70" y="27" width="1850" height="1053" />
