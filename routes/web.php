@@ -66,13 +66,21 @@ Route::group(['namespace'=>'Shop\Admin\Product','prefix'=>'shop/admin'],function
 });
 
 //Admin category controller
-
 Route::group(['namespace'=>'Shop\Admin\Category','prefix'=>'shop/admin'],function (){
     Route::resource('categories','CategoryController')
         ->except('show')
         ->names('shop.admin.category');
 });
 
+Route::get('cart', 'Shop\ProductController@cart')->name('cart');
+Route::get('/cart-add/{id}',[
+    'as'=>'cart-add',
+    'uses'=>'Shop\ProductController@addToCart'
+]);
+
+Route::patch('update-cart', 'Shop\ProductController@update')->name('update-cart');
+
+Route::delete('remove-from-cart', 'Shop\ProductController@remove')->name('remove-cart');
 
 
 

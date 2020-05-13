@@ -31,7 +31,7 @@
                         <p>
                             <a href="{{route('shop.products.show',$product->slug)}}"
                                class="btn btn-outline-primary ">Перейти</a>
-                            {{--                        <a href="#" class=" btn btn-success "><i class="fas fa-shopping-cart"></i></a>--}}
+                                                    <a href="#" class=" btn btn-success "><i class="fas fa-shopping-cart"></i></a>
                         </p>
                     </div>
                 </div>

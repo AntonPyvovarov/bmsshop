@@ -1,12 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5f04cc38-25a2-44a8-a463-d66cf23e488e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Models/Cart.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/vendor/@fortawesome/fontawesome-free/webfa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/app.js.LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/cartHeader.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/shop/product/cart.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webShop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webShop.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/contact/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/contact/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Shop/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Shop/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/ProductItemFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ProductItemFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_03_05_061644_create_product_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_03_05_061644_create_product_categories_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/static/aboutUs.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/static/aboutUs.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shop/product/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shop/product/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shop/product/product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shop/product/product.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shop/product/search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shop/product/search.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/shop/product/sort.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shop/product/sort.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/route.txt" beforeDir="false" afterPath="$PROJECT_DIR$/route.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +65,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="composer.json" />
         <option value="blade" />
       </list>
     </option>
@@ -36,8 +82,6 @@
       <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
       <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
-      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-color" />
-      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-highlighter" />
       <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
       <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
@@ -115,7 +159,6 @@
       <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
       <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
-      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
       <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
@@ -133,6 +176,9 @@
       <path value="$PROJECT_DIR$/vendor/intervention/image" />
       <path value="$PROJECT_DIR$/vendor/laravel/scout" />
       <path value="$PROJECT_DIR$/vendor/irazasyed/telegram-bot-sdk" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/vendor/bumbummen99/shoppingcart" />
     </include_path>
   </component>
   <component name="ProjectId" id="1YgB8RKdUgA4UhpkTiYt8b5rb4M" />
@@ -150,7 +196,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../testA" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../shop" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -169,11 +215,31 @@
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="hot" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
         <script value="hot" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="production" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="production" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -192,6 +258,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.watch" />
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.production" />
         <item itemvalue="npm.hot" />
       </list>
     </recent_temporary>
@@ -276,6 +344,14 @@
       <workItem from="1588512961052" duration="8433000" />
       <workItem from="1588622971010" duration="1271000" />
       <workItem from="1588630082496" duration="960000" />
+      <workItem from="1588683127366" duration="4448000" />
+      <workItem from="1588769668884" duration="3433000" />
+      <workItem from="1588848051072" duration="3879000" />
+      <workItem from="1588934440043" duration="20038000" />
+      <workItem from="1589049217189" duration="170000" />
+      <workItem from="1589049457165" duration="1514000" />
+      <workItem from="1589094696864" duration="846000" />
+      <workItem from="1589096386308" duration="684000" />
     </task>
     <task id="LOCAL-00001" summary="create project">
       <created>1583354987921</created>
@@ -354,7 +430,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588523058695</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="alpha 3">
+      <created>1588683285249</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1588683285249</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,7 +467,8 @@
     <MESSAGE value="add search, add seo url to products" />
     <MESSAGE value="create contact form &amp; add image to categories" />
     <MESSAGE value="alpha 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="alpha 2" />
+    <MESSAGE value="alpha 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="alpha 3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="590" y="215" width="800" height="736" key="#Intentions" timestamp="1583476131740">
@@ -413,17 +497,27 @@
     <state x="723" y="311" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/62.27.1858.1053@62.27.1858.1053" timestamp="1587043086930" />
     <state x="724" y="311" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/64.27.1856.1053@64.27.1856.1053" timestamp="1587892880090" />
     <state x="728" y="311" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1583790996721" />
-    <state x="595" y="176" width="782" height="762" key="#phpunit.xml" timestamp="1587048535200">
-      <screen x="62" y="27" width="1858" height="1053" />
+    <state x="645" y="221" width="686" height="671" key="#dev" timestamp="1588849088175">
+      <screen x="56" y="27" width="1864" height="1053" />
     </state>
+    <state x="645" y="221" width="686" height="671" key="#dev/56.27.1864.1053@56.27.1864.1053" timestamp="1588849088175" />
+    <state x="591" y="176" width="782" height="769" key="#phpunit.xml" timestamp="1588683263272">
+      <screen x="56" y="27" width="1864" height="1053" />
+    </state>
+    <state x="591" y="176" width="782" height="769" key="#phpunit.xml/56.27.1864.1053@56.27.1864.1053" timestamp="1588683263272" />
     <state x="595" y="176" width="782" height="762" key="#phpunit.xml/62.27.1858.1053@62.27.1858.1053" timestamp="1587048535200" />
+    <state x="645" y="221" width="676" height="671" key="#watch" timestamp="1588849108590">
+      <screen x="56" y="27" width="1864" height="1053" />
+    </state>
+    <state x="645" y="221" width="676" height="671" key="#watch/56.27.1864.1053@56.27.1864.1053" timestamp="1588849108590" />
     <state x="723" y="377" width="525" height="359" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1586179012841">
       <screen x="62" y="27" width="1858" height="1053" />
     </state>
     <state x="723" y="377" width="525" height="359" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/62.27.1858.1053@62.27.1858.1053" timestamp="1586179012841" />
-    <state x="64" y="37" width="912" height="1043" key="CommitChangelistDialog2" timestamp="1588523058539">
-      <screen x="64" y="27" width="1856" height="1053" />
+    <state x="56" y="37" width="912" height="1043" key="CommitChangelistDialog2" timestamp="1588683285074">
+      <screen x="56" y="27" width="1864" height="1053" />
     </state>
+    <state x="56" y="37" key="CommitChangelistDialog2/56.27.1864.1053@56.27.1864.1053" timestamp="1588683285074" />
     <state x="62" y="37" width="912" height="1043" key="CommitChangelistDialog2/62.27.1858.1053@62.27.1858.1053" timestamp="1587048607452" />
     <state x="64" y="37" width="912" height="1043" key="CommitChangelistDialog2/64.27.1856.1053@64.27.1856.1053" timestamp="1588523058539" />
     <state x="70" y="91" width="869" height="989" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1583823049395" />
@@ -431,27 +525,32 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="74" y="324" width="906" height="466" key="EditFileWatcherDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1583354958119" />
-    <state x="526" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1588517704787">
-      <screen x="64" y="27" width="1856" height="1053" />
+    <state x="520" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1588772007210">
+      <screen x="56" y="27" width="1864" height="1053" />
     </state>
+    <state x="520" y="311" key="FileChooserDialogImpl/56.27.1864.1053@56.27.1864.1053" timestamp="1588772007210" />
     <state x="524" y="311" width="424" height="491" key="FileChooserDialogImpl/62.27.1858.1053@62.27.1858.1053" timestamp="1586756777256" />
     <state x="526" y="311" key="FileChooserDialogImpl/64.27.1856.1053@64.27.1856.1053" timestamp="1588517704787" />
     <state x="530" y="311" width="424" height="491" key="FileChooserDialogImpl/70.27.1850.1053@70.27.1850.1053" timestamp="1584477621673" />
-    <state width="1812" height="266" key="GridCell.Tab.0.bottom" timestamp="1587131235174">
-      <screen x="62" y="27" width="1858" height="1053" />
+    <state width="1818" height="266" key="GridCell.Tab.0.bottom" timestamp="1589094828955">
+      <screen x="56" y="27" width="1864" height="1053" />
     </state>
+    <state width="1818" height="266" key="GridCell.Tab.0.bottom/56.27.1864.1053@56.27.1864.1053" timestamp="1589094828955" />
     <state width="1812" height="266" key="GridCell.Tab.0.bottom/62.27.1858.1053@62.27.1858.1053" timestamp="1587131235174" />
-    <state width="1812" height="266" key="GridCell.Tab.0.center" timestamp="1587131235174">
-      <screen x="62" y="27" width="1858" height="1053" />
+    <state width="1818" height="266" key="GridCell.Tab.0.center" timestamp="1589094828955">
+      <screen x="56" y="27" width="1864" height="1053" />
     </state>
+    <state width="1818" height="266" key="GridCell.Tab.0.center/56.27.1864.1053@56.27.1864.1053" timestamp="1589094828955" />
     <state width="1812" height="266" key="GridCell.Tab.0.center/62.27.1858.1053@62.27.1858.1053" timestamp="1587131235174" />
-    <state width="1812" height="266" key="GridCell.Tab.0.left" timestamp="1587131235174">
-      <screen x="62" y="27" width="1858" height="1053" />
+    <state width="1818" height="266" key="GridCell.Tab.0.left" timestamp="1589094828954">
+      <screen x="56" y="27" width="1864" height="1053" />
     </state>
+    <state width="1818" height="266" key="GridCell.Tab.0.left/56.27.1864.1053@56.27.1864.1053" timestamp="1589094828954" />
     <state width="1812" height="266" key="GridCell.Tab.0.left/62.27.1858.1053@62.27.1858.1053" timestamp="1587131235174" />
-    <state width="1812" height="266" key="GridCell.Tab.0.right" timestamp="1587131235174">
-      <screen x="62" y="27" width="1858" height="1053" />
+    <state width="1818" height="266" key="GridCell.Tab.0.right" timestamp="1589094828955">
+      <screen x="56" y="27" width="1864" height="1053" />
     </state>
+    <state width="1818" height="266" key="GridCell.Tab.0.right/56.27.1864.1053@56.27.1864.1053" timestamp="1589094828955" />
     <state width="1812" height="266" key="GridCell.Tab.0.right/62.27.1858.1053@62.27.1858.1053" timestamp="1587131235174" />
     <state x="578" y="290" width="824" height="533" key="IDE.errors.dialog" timestamp="1583531477259">
       <screen x="70" y="27" width="1850" height="1053" />
@@ -472,9 +571,10 @@
       <screen x="64" y="27" width="1856" height="1053" />
     </state>
     <state x="1048" y="522" width="574" height="535" key="org.intellij.images.editor.actions.BackgroundImageDialog/64.27.1856.1053@64.27.1856.1053" timestamp="1588517706533" />
-    <state x="654" y="259" width="675" height="678" key="search.everywhere.popup" timestamp="1588054110646">
-      <screen x="64" y="27" width="1856" height="1053" />
+    <state x="649" y="259" width="678" height="678" key="search.everywhere.popup" timestamp="1588940227256">
+      <screen x="56" y="27" width="1864" height="1053" />
     </state>
+    <state x="649" y="259" width="678" height="678" key="search.everywhere.popup/56.27.1864.1053@56.27.1864.1053" timestamp="1588940227256" />
     <state x="653" y="259" width="675" height="678" key="search.everywhere.popup/62.27.1858.1053@62.27.1858.1053" timestamp="1587582786059" />
     <state x="654" y="259" width="675" height="678" key="search.everywhere.popup/64.27.1856.1053@64.27.1856.1053" timestamp="1588054110646" />
     <state x="658" y="259" width="672" height="678" key="search.everywhere.popup/70.27.1850.1053@70.27.1850.1053" timestamp="1584475923026" />

@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm ">
     <div class="container">
-        <a class="navbar-brand" href="{{ url('/') }}">
-            {{ config('app.name', 'Laravel') }}
+        <a class="navbar-brand" href="{{ route('main') }}">
+            {{ config('app.name', 'Bms.Vn.Ua') }}
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -21,6 +21,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('contact') }}">Обратная связь</a>
                 </li>
+                <li>
+                    @include('layouts.cartHeader')
+                </li>
             </ul>
 
             <!-- Right Side Of Navbar -->
@@ -32,21 +35,33 @@
                            aria-label="Search" minlength="3" required maxlength="200">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
-                @auth
-                    <li class="nav-item dropdown">
-                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
-                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                            {{ Auth::user()->name }} <span class="caret"></span>
-                        </a>
+
+                    @guest
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('login') }}">{{ __('Войти') }}</a>
+                        </li>
+                        @if (Route::has('register'))
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('register') }}">{{ __('Регистрацыя') }}</a>
+                            </li>
+                        @endif
+                    @else
+                    @auth
+                        <li class="nav-item dropdown">
+
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                {{ Auth::user()->name }} <span class="caret"></span>
+                            </a>
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 @if (!Auth::guest() && Auth::user()->admin)
-                                <a class="dropdown-item" href="{{ route('shop.admin.category.create') }}">
-                                    Создать Категорию
-                                </a>
-                                <a class="dropdown-item" href="{{ route('shop.admin.product.create') }}">
-                                    Создать Карточку Товара
-                                </a>
+                                    <a class="dropdown-item" href="{{ route('shop.admin.category.create') }}">
+                                        Создать Категорию
+                                    </a>
+                                    <a class="dropdown-item" href="{{ route('shop.admin.product.create') }}">
+                                        Создать Карточку Товара
+                                    </a>
                                 @else
                                     <a class="dropdown-item" href="{{ route('home') }}">
                                         home
@@ -62,8 +77,9 @@
                                     @csrf
                                 </form>
                             </div>
-                    </li>
-                @endauth
+                        </li>
+                    @endauth
+                @endguest
             </ul>
         </div>
     </div>

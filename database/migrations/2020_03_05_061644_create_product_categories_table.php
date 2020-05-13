@@ -19,7 +19,7 @@ class CreateProductCategoriesTable extends Migration
                 $table->string('slug')->unique();
                 $table->string('title');
                 $table->string('image')->nullable();
-                $table->text('description');
+                $table->text('description')->nullable();
                 $table->timestamps();
         });
     }

@@ -4,7 +4,7 @@
 @endsection
 
 @section('content')
-    <div class="row">
+    <div class="row justify-content-center">
 
         @foreach($products as $product)
             <div class="card mr-4 py-2  col-sm-9 col-md-3" style="width: 18rem;">
@@ -12,7 +12,6 @@
                 <img src="{{ Storage::url($product->title_image) }}" class="card-img-top" alt="{{$product->title}}">
 
                 <div class="card-body">
-
                     <h2 class="card-title">
                         <a href="{{route('shop.products.show',$product->slug)}}" class="text-dark ">
                             {{$product->title}}
@@ -22,7 +21,8 @@
                     <p>
                         <a href="{{route('shop.products.show',$product->slug)}}"
                            class="btn btn-outline-primary ">Перейти</a>
-                        {{--                        <a href="#" class=" btn btn-success "><i class="fas fa-shopping-cart"></i></a>--}}
+                        <a href="#" class=" btn btn-success "><i class="fas fa-shopping-cart"></i></a>
+                        <span >{{$product->price}}</span>
                     </p>
                 </div>
             </div>

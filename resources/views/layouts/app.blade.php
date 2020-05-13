@@ -10,12 +10,10 @@
 
     <title>{{ config('app.name') }} - @yield('title')</title>
 
-    <!-- Scripts -->
-{{--    <script src="{{ asset('js/app.js') }}" defer></script>--}}
+
 
 <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
@@ -35,6 +33,8 @@
     </div>
     @include('layouts.footer')
 </div>
+<!-- Scripts -->
+{{--<script src="{{ asset('js/app.js') }}" defer></script>--}}
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

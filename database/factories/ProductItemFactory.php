@@ -13,7 +13,6 @@ $factory->define(\App\Models\ProductItem::class, function (Faker $faker) {
 
     $data= [
         'category_id' =>rand(1,11),
-        'user_id' =>(rand(1,5) == 5) ? 1 :2,
         'title'=>$title,
         'slug'=>Str::slug($title),
         'price'=>rand(20,900),
